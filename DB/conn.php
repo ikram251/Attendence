@@ -7,11 +7,11 @@
     // $charset = 'utf8mb4'; //it is standard
 
     // it is for Remote Database connection
-    $host = 'sql6.freemysqlhosting.net'; 
-    $db = 'sql6421502';
-    $user = 'sql6421502';
-    $pass = '2iRwY49h8F'; 
-    $charset = 'utf8mb4'; 
+    $host = 'remotemysql.com'; 
+    $db = 'MGU42Is3F6';
+    $user = 'MGU42Is3F6';
+    $pass = 'nUZ47Cs3dj'; 
+    $charset = 'utf8mb4'; //it is standard
 
     $dsn = "mysql:host=$host;dbname=$db;charset=$charset"; //it is a terminology is used in PDO connectivity .so, it's a way that it connects to the database is just another engine.
 
