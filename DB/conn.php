@@ -1,17 +1,17 @@
 <?php
     // It is a development connection
-    $host = 'localhost'; // we use address also - "127.0.0.1"
-    $db = 'attendence_db';
-    $user = 'root';
-    $pass = ''; //password 
-    $charset = 'utf8mb4'; //it is standard
+    // $host = 'localhost'; // we use address also - "127.0.0.1"
+    // $db = 'attendence_db';
+    // $user = 'root';
+    // $pass = ''; //password 
+    // $charset = 'utf8mb4'; //it is standard
 
     // it is for Remote Database connection
-    // $host = 'remotemysql.com'; // we use address also - "127.0.0.1"
-    // $db = 'MGU42Is3F6';
-    // $user = 'MGU42Is3F6';
-    // $pass = 'nUZ47Cs3dj'; //password 
-    // $charset = 'utf8mb4'; //it is standard
+    $host = 'remotemysql.com'; 
+    $db = 'MGU42Is3F6';
+    $user = 'MGU42Is3F6';
+    $pass = 'nUZ47Cs3dj'; 
+    $charset = 'utf8mb4'; 
 
     $dsn = "mysql:host=$host;dbname=$db;charset=$charset"; //it is a terminology is used in PDO connectivity .so, it's a way that it connects to the database is just another engine.
 
