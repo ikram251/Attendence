@@ -45,7 +45,7 @@ else{
 </div>
 <br>
 <br>
-        <a href="viewrecord.php" class="btn btn-info">Back</a>
+        <a href="viewrecords.php" class="btn btn-info">Back</a>
         <a href="edit.php?id=<?php echo $result['Attendee_ID']?>" class="btn btn-warning">Edit</a>
         <a onclick="return confirm('Are you sure you want to delete this record?')" href="delete.php?id=<?php echo $result['Attendee_ID']?>" class="btn btn-danger">Delete</a>
 <?php } ?>
