@@ -53,9 +53,11 @@ else{
             <input type="text" class="form-control" value = "<?php echo $attendee['ContactNumber'] ?>" id="phone" name="phone" aria-describedby="emailHelp">
             <div id="emailHelp" class="form-text">We'll never share your Number with anyone else.</div>
         </div>
-        <div class="d-grid gap-2">
-            <button class="btn btn-danger" type="submit" name="submit">Save & Change</button>
-        </div>
+        <a href="viewrecord.php" class="btn btn-info btn">Back</a>
+        <!-- <div class="d-grid gap-2"> -->
+            
+            <button class="btn btn-danger btn" type="submit" name="submit">Save & Change</button>
+        <!-- </div> -->
     </form>
 
 <?php } ?>
