@@ -1,7 +1,7 @@
 <?php 
 $title="View record";
 require_once "includes/header.php" ;
-require_once "db/conn.php";
+require_once "DB/conn.php";
 
 // Get attendee by id
 if(!isset($_GET['id'])){

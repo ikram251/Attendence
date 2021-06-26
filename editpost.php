@@ -1,5 +1,5 @@
 <?php 
-require_once "db/conn.php";
+require_once "DB/conn.php";
 // get values from post operation
 if(isset($_POST['submit'])){
     $id = $_POST['id'];

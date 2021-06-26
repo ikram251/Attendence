@@ -1,7 +1,7 @@
 <?php 
 $title="Home";
 require_once "includes/header.php" ;
-require_once "db/conn.php";
+require_once "DB/conn.php";
 
 $results = $crud->getSpecialties();
 ?>

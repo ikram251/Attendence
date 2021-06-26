@@ -1,5 +1,5 @@
 <?php 
-require_once "db/conn.php";
+require_once "DB/conn.php";
 
 if(!$_GET['id']){
     include 'includes/error.php';
