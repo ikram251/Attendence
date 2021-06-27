@@ -1,7 +1,7 @@
   <!-- <div id="footer">
   <p class="text-center">Copyright &copy; - IT Conference Attendance System <?php echo date('Y'); ?></p>
   </div> -->
-  <div id="footer" class="p-2 bg-info text-white fixed-bottom">
+  <div id="footer" class="p-2 bg-info text-white fixed-auto">
             <p class="text-center">Copyright &copy; - IT Conference Attendance System <?php echo date('Y'); ?></p>
 
         </div>
