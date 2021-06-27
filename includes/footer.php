@@ -1,9 +1,12 @@
-  <div id="footer">
-    <?php 
-        echo  ' Copyright '.date("Y");
-    ?>
-  </div>
+  <!-- <div id="footer">
+  <p class="text-center">Copyright &copy; - IT Conference Attendance System <?php echo date('Y'); ?></p>
+  </div> -->
  </div>
+        <div id="footer" class="p-2 bg-info text-white fixed-auto">
+            <p class="text-center">Copyright &copy; - IT Conference Attendance System <?php echo date('Y'); ?></p>
+
+        </div>
+
  <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

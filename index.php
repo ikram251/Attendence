@@ -7,7 +7,7 @@ $results = $crud->getSpecialties();
 ?>
     <!-- when we press the submit , some action will done and it goes to next page to action and for that we used method attribute -->
     <h1><p class="text-center">Registration for IT Conference</p></h1>
-    <form method="post" action="Success.php"> 
+    <form method="post" action="Success.php" enctype="multipart/form-data"> 
         <div class="mb-3">
             <label for="firstname" class="form-label">First Name</label>
             <input required type="text" class="form-control" id="firstname" name="firstname">
@@ -40,11 +40,19 @@ $results = $crud->getSpecialties();
             <label for="phone" class="form-label">Contact Number</label>
             <input required type="text" class="form-control" id="phone" name="phone" aria-describedby="emailHelp">
             <div id="emailHelp" class="form-text">We'll never share your Number with anyone else.</div>
+        </div> 
+        <!-- <br>
+        <div class="mb-3">
+            <label for="photo">Choose Image File</label>
+            <small id="photo" class="form-text text-danger">(Upload is Optional)</small>
+            <input type="file" accept="image/*" id="photo" name="photo">
         </div>
+        <br>    -->
         <div class="d-grid gap-2">
             <button class="btn btn-primary" type="submit" name="submit">Submit</button>
         </div>
     </form>
+<br>
 <?php require_once "includes/footer.php" ?>
 
 

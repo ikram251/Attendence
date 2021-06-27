@@ -9,7 +9,7 @@ $results = $crud->getAttendees();
 
 <table class="table">
 <tr>
-    <th>#</th>
+    <!-- <th>#</th> -->
     <th>First Name</th>
     <th>Last Name</th>
     <th>Speciality</th>
@@ -19,7 +19,7 @@ $results = $crud->getAttendees();
 <?php 
     while($r=$results->fetch(PDO::FETCH_ASSOC)){ ?>
         <tr>
-            <td><?php echo $r['Attendee_ID'] ?></td>
+            <!-- <td><?php echo $r['Attendee_ID'] ?></td> -->
             <td><?php echo $r['firstname'] ?></td>
             <td><?php echo $r['lastname'] ?></td>
             <td><?php echo $r['name'] ?></td>

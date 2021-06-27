@@ -21,6 +21,7 @@
                     $stmt->bindparam(":email",$email);
                     $stmt->bindparam(":contact",$contact);
                     $stmt->bindparam(":speciality",$speciality);
+                    //$stmt->bindparam(":avatar",$avatar);
                     // execute statement
                     $stmt->execute();
                     return true;

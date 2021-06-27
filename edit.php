@@ -54,6 +54,13 @@ else{
             <input type="text" class="form-control" value = "<?php echo $attendee['ContactNumber'] ?>" id="phone" name="phone" aria-describedby="emailHelp">
             <div id="emailHelp" class="form-text">We'll never share your Number with anyone else.</div>
         </div>
+        <br>
+        <div class="custom-file">
+            <label class="custom-file-label" for="avatar">Choose File</label>
+            <small id="avatar" class="form-text text-danger">(Image Upload is Optional)</small>
+            <input type="file" accept="image/*" class="custom-file-input" id="avatar" name="avatar" >
+        </div>
+        <br/>
         <a href="viewrecords.php" class="btn btn-info btn">Back</a>
         <!-- <div class="d-grid gap-2"> -->
             
