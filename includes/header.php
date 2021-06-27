@@ -16,7 +16,7 @@ include_once 'includes/session.php'; ?>
     <title>Attendance-<?php echo $title ?></title>
   </head>
   <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-info p-2 fixed-auto" >
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-info p-2 fixed-auto" >
       <div class="container-fluid">
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-door-open-fill" viewBox="0 0 16 16">
@@ -38,20 +38,42 @@ include_once 'includes/session.php'; ?>
           </ul>
             <div d-flex>
                 <?php 
-                  if(!isset($_SESSION['userid'])){
+                  //if(!isset($_SESSION['userid'])){
                 ?>
                 <!-- <button class="btn btn-warning" type="submit"><a class="nav-link active" aria-current="page" href="login.php">Login</a></button> -->
-                <a class="nav-link active" aria-current="page" href="login.php">Login</a>
-                <?php } else { ?>
-                  <span text-white>Hello <?php echo $_SESSION['username'] ?>! </span></a>
+                <!-- <a class="nav-link active" aria-current="page" href="login.php">Login</a> -->
+                <?php //} else { ?>
+                  <!-- <span text-white>Hello <?php //echo $_SESSION['username'] ?>! </span></a> -->
                   <!-- <button class="btn btn-warning" type="submit"><a class="nav-item nav-link" href="logout.php">Logout</a></button> -->
-                  <a href="logout.php">Logout</a>
-                <?php } ?>
+                  <!-- <a href="logout.php">Logout</a> -->
+                <?php //} ?>
             </div>
 
         </div>
       </div>
-</nav>
+</nav> -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="index.php">IT Conference</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="viewrecords.php">View Attendees</a>
+        </div>
+        <div class="navbar-nav ml-auto">
+          <?php 
+              if(!isset($_SESSION['userid'])){
+          ?>
+            <a class="nav-item nav-link" href="login.php">Login <span class="sr-only">(current)</span></a>
+          <?php } else { ?>
+            <a class="nav-item nav-link" href="#"><span>Hello <?php echo $_SESSION['username'] ?>! </span> <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="logout.php">Logout <span class="sr-only">(current)</span></a>
+          <?php } ?>
+        </div>
+      </div>
+    </nav>
     <div class="container">
     
     
