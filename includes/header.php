@@ -45,7 +45,7 @@ include_once 'includes/session.php'; ?>
                 <?php } else { ?>
                   <span text-white>Hello <?php echo $_SESSION['username'] ?>! </span></a>
                   <!-- <button class="btn btn-warning" type="submit"><a class="nav-item nav-link" href="logout.php">Logout</a></button> -->
-                  <a class="nav-item nav-link" href="logout.php">Logout</a>
+                  <a href="logout.php">Logout</a>
                 <?php } ?>
             </div>
 
