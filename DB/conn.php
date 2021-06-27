@@ -32,6 +32,10 @@
         
     }
     require_once 'crud.php';
+    require_once 'user.php';
     $crud =new crud($pdo); //creating an object crud to class crud
+    $user =new user($pdo); //creating an object crud to class crud
+
+    $user->insertuser("admin","password");
 
 ?>

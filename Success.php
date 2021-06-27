@@ -2,6 +2,7 @@
 $title="Success";
 require_once "includes/header.php" ;
 require_once "DB/conn.php";
+require_once "sendmail.php";
 
 if(isset($_POST['submit'])){
     $fname = $_POST['firstname'];
@@ -12,8 +13,9 @@ if(isset($_POST['submit'])){
     $speciality = $_POST['speciality'];
     // call function to insert and track if it is success or not. 
     $issuccess = $crud->insertAttendees($fname,$lname,$dob,$email,$contact,$speciality);
-
+    $specialtyName = $crud->getSpecialtyById($speciality);
     if($issuccess){
+        SendEmail::SendMail($email,"Welcome to IT conference 2021","You successfully registered for this year\'s IT conference");
         echo '<h1><p class="text-center text-success">Registered Sucessfully.</p></h1>';
     }
     else{
