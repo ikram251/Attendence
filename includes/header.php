@@ -42,7 +42,8 @@ include_once 'includes/session.php'; ?>
                 <?php 
                   if(!isset($_SESSION['userid'])){
                 ?>
-                <button class="btn btn-warning" type="submit"><a class="nav-link active" aria-current="page" href="login.php">Login</a></button>
+                <!-- <button class="btn btn-warning" type="submit"><a class="nav-link active" aria-current="page" href="login.php">Login</a></button> -->
+                <a class="nav-link active" aria-current="page" href="login.php">Login</a>
                 <?php } else { ?>
                   <span text-white>Hello <?php echo $_SESSION['username'] ?>! </span></a>
                   <!-- <button class="btn btn-warning" type="submit"><a class="nav-item nav-link" href="logout.php">Logout</a></button> -->
