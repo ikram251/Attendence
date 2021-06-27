@@ -36,7 +36,7 @@ include_once 'includes/session.php'; ?>
               <a class="nav-link" href="viewrecords.php">View Attendees</a>
             </li>
           </ul>
-            <form d-flex>
+            <div d-flex>
                 <?php 
                   if(!isset($_SESSION['userid'])){
                 ?>
@@ -47,7 +47,7 @@ include_once 'includes/session.php'; ?>
                   <!-- <button class="btn btn-warning" type="submit"><a class="nav-item nav-link" href="logout.php">Logout</a></button> -->
                   <a class="nav-item nav-link" href="logout.php">Logout</a>
                 <?php } ?>
-            </form>
+            </div>
 
         </div>
       </div>
