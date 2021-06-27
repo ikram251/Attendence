@@ -6,6 +6,7 @@ require_once "DB/conn.php";
 $results = $crud->getSpecialties();
 ?>
     <!-- when we press the submit , some action will done and it goes to next page to action and for that we used method attribute -->
+    
     <h1><p class="text-center">Registration for IT Conference</p></h1>
     <form method="post" action="Success.php" enctype="multipart/form-data"> 
         <div class="mb-3">

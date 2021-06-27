@@ -16,7 +16,9 @@ include_once 'includes/session.php'; ?>
     <title>Attendance-<?php echo $title ?></title>
   </head>
   <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-info" style="margin-top: 10px;">
+ 
+    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
       <div class="container-fluid">
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-door-open-fill" viewBox="0 0 16 16">
@@ -50,5 +52,4 @@ include_once 'includes/session.php'; ?>
         </div>
       </div>
 </nav>
-    <div class="container">
     
