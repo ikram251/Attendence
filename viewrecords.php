@@ -36,4 +36,7 @@ $results = $crud->getAttendees();
 </table>
 
 
-<?php require_once "includes/footer.php" ?>
+        <div id="footer" class="p-1 bg-info text-white fixed-bottom">
+            <p class="text-center">Copyright &copy; - IT Conference Attendance System <?php echo date('Y'); ?></p>
+
+        </div>
